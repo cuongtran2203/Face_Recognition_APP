@@ -12,7 +12,7 @@ import os
 def put_data(id):
     now = datetime.now()
     date="{d}_{m}_{y}.csv".format(d =now.day, m=now.month, y=now.year)
-    root = "/home/cuong/API_face_recog/database/DB"
+    root = "/home/cuong/API_face_recog/database/export_DB"
     file_name = os.path.join(root,date)
     if not os.path.exists(file_name):
         column = ['ID', 'DATE', 'START_TIME', 'END_TIME']

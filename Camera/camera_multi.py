@@ -13,7 +13,7 @@ class Camera(BaseCamera):
     # over-wride of BaseCamera class frames method
     # @staticmethod
     def frames(self):
-        camera = cv2.VideoCapture("rtsp://admin:ZTLBTF@192.168.1.21:554")
+        camera = cv2.VideoCapture("rtsp://admin:XEJVQU@192.168.1.3:554")
         model=Face_recognition(720,1280)
         if not camera.isOpened():
             raise RuntimeError('Could not start camera.')
@@ -43,7 +43,7 @@ class Camera_extract(BaseCamera):
     # over-wride of BaseCamera class frames method
     # @staticmethod
     def frames(self):
-        camera = cv2.VideoCapture("rtsp://admin:ZTLBTF@192.168.1.21:554")
+        camera = cv2.VideoCapture("rtsp://admin:XEJVQU@192.168.1.3:554")
         if not camera.isOpened():
             raise RuntimeError('Could not start camera.')
         count=0
