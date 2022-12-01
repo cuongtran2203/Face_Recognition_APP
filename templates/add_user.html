@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ADD USER</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>ADD USER</h1>
+    <div class="component" style="display: flex;">
+        <div class="video" style="width: 70%; display: flex; justify-content: center; margin: auto;">
+            <img class="videoSrc" src="{{ url_for('streaming') }}"
+                style="width: 50vw; border: 10px; border-style: dashed; border-radius: 50px;">
+        </div>
+        <div class="funcButton"
+            style="align-items: center; width: 30%; display: flex; justify-content: center; flex-direction: column; margin: auto;">
+            <form class="entryForm" method="post" action="/add_user">
+                <p style="display: flex; justify-content: center; align-items: center;">Enter user name</p>
+                <input type="text" name="fname" id="fname" value="e.g. John"
+                    style="margin-top: 10px; margin-bottom: 10px; width: 200px;"><br>
+
+                <button type="submit" role="button" class="btn btn-primary"
+                    style="margin-top: 10px; margin-bottom: 10px; width: 200px; color: #fff">
+                    Save user to data base
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
